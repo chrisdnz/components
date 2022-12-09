@@ -1,11 +1,7 @@
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components'
 
-import { defaultTheme } from './themes';
+import { defaultTheme } from './themes'
 
-export default function Wrapper ({ children }) {
-  return (
-    <ThemeProvider theme={defaultTheme}>
-      {children}
-    </ThemeProvider>
-  );
-};
+export default function Wrapper({ children }) {
+  return <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>
+}
